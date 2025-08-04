@@ -1,26 +1,31 @@
 <template>
-  <div>
-    <Hello />
-    <foota />
+  <div id="app" class="app-container">
+    <Header />
+    <MainContent />
+    <Footer />
   </div>
 </template>
 
 <script>
-import Hello from './components/greeting.vue'
-
-import foota from './components/foota.vue'
+import Header from './components/Header.vue';
+import MainContent from './components/MainContent.vue';
+import Footer from './components/Footer.vue';
 
 export default {
+  name: 'App',
   components: {
-    Hello,
-    foota
-  }
-}
+    Header,
+    Footer,
+    MainContent,
+  },
+};
 </script>
 
-<style scoped>
-/*glabal styles*/
-div {
-  padding: 20px;
+<style>
+/*global stles*/
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #35495e;
 }
 </style>
