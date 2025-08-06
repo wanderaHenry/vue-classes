@@ -13,7 +13,10 @@
       <label for="password">Password:</label><br />
       <input type="password" id="password" /><br />
 
-      <button type="submit">Register</button>
+       <button type="submit" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+  Register
+</button>
     </form>
   </main>
 </template>
